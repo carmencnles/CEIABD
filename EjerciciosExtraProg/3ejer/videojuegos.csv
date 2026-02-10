@@ -1,0 +1,16 @@
+ID;Videojuego;Plataforma;Precio_Original;Precio_Venta;Precio_Costo;Unidades_Vendidas;Fecha_Venta
+1;FIFA 24;PlayStation;69.99;59.99;30.00;150;15/03/2024
+2;Call of Duty;Xbox;79.99;79.99;35.00;200;22/03/2024
+3;Zelda;Nintendo;59.99;49.99;25.00;180;10/04/2024
+4;Minecraft;PC;29.99;29.99;10.00;500;05/05/2024
+5;GTA V;PlayStation;39.99;29.99;15.00;300;18/06/2024
+6;Fortnite Pack;Xbox;19.99;14.99;5.00;400;25/07/2024
+7;Mario Kart;Nintendo;54.99;54.99;20.00;250;12/08/2024
+8;Cyberpunk;PC;59.99;39.99;25.00;120;30/09/2024
+9;Halo;Xbox;69.99;49.99;30.00;90;15/10/2024
+10;Spider-Man;PlayStation;69.99;59.99;28.00;160;20/11/2024
+11;Animal Crossing;Nintendo;49.99;44.99;18.00;220;05/12/2024
+12;Valorant Pack;PC;24.99;19.99;8.00;350;18/01/2023
+13;FIFA 23;PlayStation;59.99;39.99;25.00;80;22/02/2023
+14;Overwatch;Xbox;39.99;29.99;15.00;110;10/03/2023
+15;Pokemon;Nintendo;59.99;59.99;22.00;95;15/12/2024

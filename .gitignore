@@ -1,0 +1,55 @@
+cat > .gitignore << 'EOF'
+# Datasets e imágenes
+**/dataset/
+**/datasets/
+**/images/
+**/data/
+*.zip
+*.tar.gz
+*.rar
+
+# Videos y multimedia
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.mp3
+*.wav
+
+# Resultados de entrenamientos
+**/runs/
+**/weights/
+**/checkpoints/
+*.pt
+*.pth
+*.h5
+*.pkl
+
+# Archivos de Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.Python
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Archivos grandes específicos que veo en tu listado
+test_*.jpg
+yolo*.pt
+*.roboflow.txt
+EOF

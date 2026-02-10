@@ -1,0 +1,14 @@
+path: /home/ciabd01/Documentos/CEIABD/MIA/UT3_5/dataset-piedra-papel-tijeras
+train: images  # train images (relative to 'path')
+val: images    
+test: images   
+
+# Classes
+nc: 3 
+names:
+  0: Piedra
+  1: Papel
+  2: Tijeras
+
+# Alternative format (both work):
+# names: ['piedra', 'papel', 'tijeras']

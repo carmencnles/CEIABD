@@ -1,0 +1,3 @@
+Papel
+Piedra
+Tijera

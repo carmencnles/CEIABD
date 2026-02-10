@@ -1,0 +1,16 @@
+ID,Nombre,Edad,Departamento,Salario,Años_Experiencia,Evaluacion_Desempeño,Bono_Anual
+1,Ana López,28,Ventas,45000,4,Bueno,4500
+2,Carlos Ruiz,35,IT,75000,8,Excelente,11250
+3,María García,42,RRHH,55000,12,Bueno,5500
+4,Juan Pérez,31,Ventas,48000,6,Excelente,7200
+5,Laura Torres,26,Marketing,42000,3,Regular,2100
+6,Pedro Sanz,45,IT,82000,15,Excelente,12000
+7,Sofía Martín,29,RRHH,47000,5,Bueno,4700
+8,Diego Romero,38,Ventas,65000,10,Excelente,9750
+9,Elena Navarro,33,Marketing,51000,7,Bueno,5100
+10,Miguel Díaz,27,IT,58000,4,Regular,2900
+11,Carmen Vega,40,RRHH,62000,13,Excelente,9300
+12,Roberto Gil,36,Ventas,70000,9,Excelente,10500
+13,Isabel Castro,30,Marketing,49000,5,Bueno,4900
+14,Fernando Mora,44,IT,78000,14,Excelente,11700
+15,Patricia Ruiz,32,RRHH,53000,8,Malo,0
