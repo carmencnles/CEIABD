@@ -7,6 +7,7 @@ cat > .gitignore << 'EOF'
 *.zip
 *.tar.gz
 *.rar
+*MIA/ActividadClasificacion/
 
 # Videos y multimedia
 *.mp4
