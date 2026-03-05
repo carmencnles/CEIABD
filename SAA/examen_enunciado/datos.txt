@@ -1,0 +1,4 @@
+student_id,age,gender,academic_level,study_hours,self_study_hours,online_classes_hours,social_media_hours,gaming_hours,sleep_hours,screen_time_hours,exercise_minutes,caffeine_intake_mg,part_time_job,upcoming_deadline,internet_quality,mental_health_score,focus_index,burnout_level,productivity_score,exam_score
+
+
+ID de estudiante, edad, género, nivel académico, horas de estudio, horas de autoaprendizaje, horas de clases en línea, horas de redes sociales, horas de juegos, horas de sueño, horas de pantalla, minutos de ejercicio, mg de cafeína, trabajo a tiempo parcial, próxima fecha límite, calidad de internet, puntuación de salud mental, índice de concentración, nivel de agotamiento, puntuación de productividad, puntuación de examen
