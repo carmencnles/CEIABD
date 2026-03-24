@@ -29,7 +29,8 @@ cat > .gitignore << 'EOF'
 # Archivos de Jupyter
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
-.jpg
+**/*.jpg
+
 # Python
 __pycache__/
 *.pyc
