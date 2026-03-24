@@ -58,3 +58,5 @@ yolo*.pt
 EOF
 .gitignore
 PIA/3ºEVA/Actividad3_18_Pistachos/training/Kirmizi_Pistachio_training/kirmizi (3).jpg
+PIA/3ºEVA/Actividad3_18_Pistachos/carmen.keras
+*.keras
