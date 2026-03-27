@@ -1,0 +1,72 @@
+#Para ejecutar el docker-compose.yml, se debe ejecutar el siguiente comando en la terminal:
+#docker compose up -d       
+#Para desmontarlo, se debe ejecutar el siguiente comando en la terminal:
+#docker compose down
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.0
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+  mysql:
+    image: mysql:8.0-debian
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=iot_db
+    command: ["--server-id=1", "--log-bin=mysql-bin", "--binlog-format=ROW"]
+    
+        
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin_web
+    restart: always
+    ports:
+      - "8081:80"
+    environment:
+      PMA_HOST: mysql  
+      PMA_PORT: 3306
+    depends_on:
+      - mysql
+
+
+#Para ver el SQL:
+#docker compose exec mysql mysql -u root -proot iot_db   ->>>>password root
+
+#Entraras en una linea de comandos de MySQL, directamente en la base de datos iot_db. 
+#Desde ahí, puedes ejecutar consultas SQL para ver los datos almacenados en las tablas. Por ejemplo:
+#SELECT * FROM lecturas ORDER BY timestamp DESC LIMIT 10;    ->>>> para ver los primeros 10 registros de la tabla especificada
+
+#Para ver los logs de MySQL, puedes usar el siguiente comando:
+
+#SHOW BINARY LOGS;  -->>muestra los ficheros
+#SHOW BINLOG EVENTS IN 'mysql-bin.000001';  -->>>muestra los eventos del log binario especificado (reemplaza 'mysql-bin.000001' con el nombre del archivo de log que deseas inspeccionar)
+
+#Ahora vamos a ver directamente los registros del log de MySQL:
+#Por comandos:
+#docker compose exec mysql tail -f /var/lib/mysql/mysql-bin.000001   ->>>> para ver el log de MySQL en tiempo real (asegúrate de que el nombre del archivo de log coincide con el que se está generando en tu contenedor)
+
+#Entramos en la consola:
+#docker compose exec mysql bash
+##mysqlbinlog -v --base64-output=DECODE-ROWS /var/lib/mysql/mysql-bin.000001 | grep -A 20 -B 5 "Write_rows"
+
+
+
+
