@@ -8,7 +8,10 @@ cat > .gitignore << 'EOF'
 *.tar.gz
 *.rar
 *MIA/ActividadClasificacion/
-*MIA/3ºEVA/UT4-4.7/
+
+MIA/3ºEVA/UT4-4.7
+
+# MIA/3ºEVA/UT4-4.7/Tarea4-4.7.ipynb
 
 # Videos y multimedia
 *.mp4
@@ -63,4 +66,4 @@ PIA/3ºEVA/Actividad3_18_Pistachos/carmen.keras
 *.keras
 *.csv
 Datafiniti_Amazon_Consumer_Reviews_of_Amazon_Products.csv
-MIA/3ºEVA/UT4-4.7/Tarea4-4.7.ipynb
+
