@@ -11,6 +11,8 @@ cat > .gitignore << 'EOF'
 
 MIA/3ºEVA/UT4-4.7
 MIA/3ºEVA/UT4.8.3 Practica
+MIA/3ºEVA/UT4.8.2 RAG LANGChain
+MIA/3ºEVA/TrabajoRAG
 
 # MIA/3ºEVA/UT4-4.7/Tarea4-4.7.ipynb
 
