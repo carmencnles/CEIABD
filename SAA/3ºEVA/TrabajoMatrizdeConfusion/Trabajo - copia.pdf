@@ -1,32 +1,10 @@
-<div style="text-align: center; height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 2px solid #8B0000; padding: 20px; box-sizing: border-box; margin: 0 auto;">
+# **Trabajo de investigación sobre la matriz de confusión**
 
-<br>
+### Incendios Forestales
 
-# **TRABAJO DE INVESTIGACIÓN SOBRE LA MATRIZ DE CONFUSIÓN**
+**Autor:** Maria del Carmen Canales    
 
-### **Análisis aplicado a la intensidad de Incendios Forestales**
-
-<br>
-
-![alt text](image-4.png)
-
-<br><br>
-
-**Autor:** **Maria del Carmen Canales**
-
-<br>
-
-**Fecha:** 12 de mayo de 2026
-
-<br>
-
-**Asignatura:** **Sistemas de Aprendizaje Automático**
-
-<br>
-
-</div>
-
-<div style="page-break-after: always;"></div>
+**Fecha:** 12/05/2026
 
 ## Índice
 1. [Introducción](#1---introducción)
@@ -203,11 +181,9 @@ El análisis de la Matriz de Confusión revela que el éxito en este problema no
 
 ## 9 - Referencias
 
-Learn Python > https://www.learnpython.org/es/   
+Kaggle: Wildfire Risk Dataset 2024-2025 | 7 Regions.
 
-Kaggle: Wildfire Risk Dataset 2024-2025 | 7 Regions > https://www.kaggle.com/datasets/alitaqishah/wildfire-risk-dataset-2024-2025-7-regions   
-
-Scikit-learn Documentation > https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html   
+Scikit-learn Documentation: Métricas de clasificación y matrices de confusión.
 
 ## 10 - Anexo - Uso de herramientas de Inteligencia Artificial
 
@@ -217,16 +193,16 @@ Hito 1: Identificación del "Falso Éxito" (Data Leakage)
 
 Prompt enviado: "¿Por qué mi Random Forest da un 99.8% de accuracy con este dataset de incendios? ¿Es normal?"
 
-> Resultado: La IA ayudó a identificar que las columnas frp_mw y brightness_k eran datos del incendio ya iniciado, no predictores previos.
+Resultado: La IA ayudó a identificar que las columnas frp_mw y brightness_k eran datos del incendio ya iniciado, no predictores previos.
 
 Hito 2: Estrategia de Experimentación
 
 Prompt enviado: "Tengo un problema de 4 clases de intensidad de fuego. ¿Cómo puedo demostrar en mi trabajo que el modelo aprende aunque el accuracy sea bajo?"
 
-> Resultado: Diseño de los 3 escenarios comparativos para mostrar la evolución de la matriz de confusión.
+Resultado: Diseño de los 3 escenarios comparativos para mostrar la evolución de la matriz de confusión.
 
 Hito 3: Interpretación de la Matriz
 
 Prompt enviado: "¿Qué significa que en mi matriz de confusión la mayoría de los fallos estén justo al lado de la diagonal principal?"
 
-> Resultado: Análisis técnico sobre errores en clases adyacentes y la coherencia lógica del modelo.
+Resultado: Análisis técnico sobre errores en clases adyacentes y la coherencia lógica del modelo.
